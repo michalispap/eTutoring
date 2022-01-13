@@ -1,0 +1,818 @@
+/*Website's general color: rgb(26, 106, 154)*/
+
+
+@font-face { /*Define 'myFont' font face*/
+  font-family: 'myFont';
+  src: url(../assets/open-sans/OpenSans-Regular.ttf);
+}
+
+body { /*Set font family of body, display body as grid*/
+  font-family: 'myFont';
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+header { /*Display header as flexbox*/
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header > a { /*Set position of header > a*/
+  align-self: center;
+}
+
+header h2 { /*Set position, color and font properties of header h2*/
+  color:rgb(26, 106, 154);
+  align-self: center;
+  font-family: 'Brush Script MT', cursive;
+}
+
+main nav { /*Display main nav as flexbox, set position and color of main nav*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  background-color: rgb(26, 106, 154);
+  z-index: 9999;
+}
+
+main nav a { /*Set padding, position, font properties and color of main nav a*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main nav a:hover { /*Set background color of man naiv a on hover*/
+  background-color: rgba(63, 62, 62, 0.644);
+}
+
+main { /*Display main as grid*/
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+footer { /*Set padding, font properties and background color of footer, display footer as grid*/
+  background-color: rgba(178, 220, 223, 0.863);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 20px;
+}
+
+#footer-div { /*Display #footer-div as flexbox, set position of #footer-div*/
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+footer img { /*Set margin of footer img*/
+  margin: auto;
+}
+
+footer h3 { /*Set font properties of footer h3*/
+  font-size: 16px;
+}
+
+.container { /*Set position of .container*/
+  position: relative;
+}
+
+.container h2 { /*Set font properties of .container h2*/
+  font-size: 46px;
+}
+
+.container p { /*Set font properties of .container p*/
+  font-size: 24px;
+}
+
+.container img { /*Set max-width of .container img*/
+  max-width: 100%;
+}
+
+#main-page-article-1 { /*Display #main-page-article-1 as grid, set position of #main-page-article-1*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main-page-article-1 h2 { /*Set font properties and position of #main-page-article-1 h2, place #main-page-article-1 h2 inside grid*/
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  text-align: center;
+  font-size: 28px;
+}
+
+#main-page-article-1 p { /*Set font properties and position of #main-page-article-1 p, place #main-page-article-1 p inside grid*/
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  text-align: center;
+  font-size: 22px;
+}
+
+#main-page-article-2 { /*Display #main-page-article-2 as grid*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#main-page-article-2 p { /*Set position of #main-page-article-2 p*/
+  text-align: center;
+}
+
+#main-page-div { /*Display #main-page-div as flexbox, set position of flex items*/
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-page-article-3 { /*Set font properties and position of #main-page-article-3*/
+  text-align: center;
+  font-size: 22px;
+}
+
+.subject { /*Display .subject as flexbox, set position of flex items*/
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.subject h2 { /*Set font properties and color of .subject h2*/
+  font-size: 36px;
+  color: rgb(26, 106, 154);
+}
+
+.subject img { /*Set max-width of .subject img*/
+  max-width: 100%;
+}
+
+.subject ul { /*Set position and font properties of .subject ul*/
+  align-self: flex-start;
+  font-size: 17px;
+}
+
+.subject p { /*Set padding and font properties of .subject p*/
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 17px;
+}
+
+.content { /*Set font properties, padding and position of .content*/
+  font-size: 26px;
+  text-decoration: underline;
+  align-self: flex-start;
+  padding-left: 15px;
+}
+
+.fields{ /*Set font properties, padding and position of .fields*/
+  font-size: 26px;
+  text-decoration: underline;
+  align-self: flex-start;
+  padding-left: 15px;
+}
+
+main section { /*Set background color of main sections*/
+  background-color: whitesmoke;
+}
+
+.field-name { /*Set font properties, margin, position and background color of .field-name*/
+  background-color: rgb(211, 233, 241);
+  font-size: 32px;
+  text-align: center;
+  margin: 0px 400px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.fa { /*Set font properties, padding and position of social media buttons*/
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.fa:hover { /*Set opacity of social media buttons on hover*/
+  opacity: 0.7;
+}
+
+.fa-facebook { /*Set color and background of Facebook social media button*/
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram { /*Set color and background of Instagram social media button*/
+  background: #125688;
+  color: white;
+}
+
+#main-page-article-1 img { /*Set max-width of #main-page-article-1 image*/
+  max-width: 100%;
+}
+
+#main-page-article-2 img { /*Set max-width of #main-page-article-2 image*/
+  max-width: 100%;
+}
+
+#main-page-article-3 ~ .container > h2 { /*Set color properties and position of #main-page-article-3 h2*/
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+  text-align: center;
+}
+
+.course { /*Display .course as grid*/
+  display: grid;
+  grid-template-areas:
+    'image course-title'
+    'link price'
+    'course-description-title content-title'
+    'course-description content';
+}
+
+.course img { /*Set width and position of .course image*/
+  grid-area: image;
+  width: 100%;
+}
+
+.price { /*Set font properties and position of .price*/
+  font-weight: bold;
+  font-size: 18px;
+  grid-area: price;
+  text-align: center;
+}
+
+.course p:first-of-type { /*Set font properties and position of .course first p*/
+  font-size: 16px;
+  grid-area: course-description;
+  text-align: center;
+}
+
+.course h4:first-of-type { /*Set font properties and position of .course first h4*/
+  font-size: 28px;
+  grid-area: course-title;
+  text-align: center;
+}
+
+.course h5:nth-of-type(2) { /*Set font properties and position .course second h5*/
+  font-size: 20px;
+  grid-area: course-description-title;
+  text-align: center;
+}
+
+.course h5:last-of-type { /*Set font properties and position of .course last h5*/
+  font-size: 20px;
+  grid-area: content-title;
+  text-align: center;
+}
+
+.course p:last-of-type { /*Set font properties and position of .course last p*/
+  font-style: italic;
+  grid-area: link;
+}
+
+.course ul { /*Set font properties and position of .course unordered list*/
+  font-size: 16px;
+  grid-area: content;
+}
+
+.subject ul, .course ul { /*Set list type of .subject and .course unordered lists*/
+  list-style-type: circle;
+}
+
+.course a:visited { /*Set color of every visited .course a (hyperlink)*/
+  color: purple;
+}
+
+.course a:hover { /*Set transition effect and font properties of every .course a (hyperlink)*/
+  transition: transform .2s;
+  font-weight: 900;
+}
+
+.course a:link { /*Set color of every unvisited .course a (hyperlink)*/
+  color: rgb(26, 106, 154);
+}
+
+.course a:active { /*Set color of every .course a (hyperlink) while clicked*/
+  color: red;
+}
+
+#about-us article { /*Display #about-us article as grid*/
+  display: grid;
+  grid-template-areas:
+    'avatar bio';
+}
+
+#about-us article img { /*Set max-width and position of #about-us article image*/
+  max-width: 100%;
+  grid-area: avatar;
+}
+
+#about-us article p { /*Set position of #about-us article p*/
+  grid-area: bio;
+}
+
+#about-us { /*Set background color of #about-us*/
+  background-color: rgb(212, 231, 231);
+}
+
+#about-us h2 { /*Set font properties, color and position of #about-us h2*/
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+}
+
+#contact-main-div { /*Display #contact-main-div as grid*/
+  display: grid;
+}
+
+#contact-main-div img { /*Set max-width and position of #contact-main-div image*/
+  max-width: 100%;
+  grid-area: image-tel;
+}
+
+#contact-text { /*Set font properties and position of #contact-text*/
+  align-self: center;
+  font-size: 22px;
+  grid-area: contact-text;
+}
+
+#form-div { /*Set background color and position*/
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  grid-area: form;
+}
+
+iframe { /*Set position and margin of iframe*/
+  justify-self: center;
+  margin-bottom: 40px;
+  grid-area: iframe;
+}
+
+input[type=text], input[type=email], textarea[type=text] { /*Set margin, padding, dimensions and border properties of contact form attribute selectors*/
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] { /*Set margin, padding, border properties, dimensions and background color of contact form "submit" attribute selector*/
+  width: 100%;
+  background-color: rgb(26, 106, 154);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover { /*Set background color of contact form "submit" attribute selector on hover*/
+  background-color: rgb(16, 65, 97);
+}
+
+@media screen and (max-width: 600px) { /*Set media query for mobile phones*/
+
+  main nav { /*Set position of main nav, display main nav as flexbox*/
+    position: relative;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  main { /*Display main as grid*/
+     grid-template-columns: repeat(1, 1fr); 
+  }
+
+  #main-page-article-1 ~ img { /*Set max-width of #main-page-article-1 ~ image*/
+    max-width: 100%;
+  }
+
+  #main-page-article-2 { /*Display #main-page-article-2 as flexbox*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-page-article-3 ~ .container > h2 { /*Set color of #main-page-article-3 ~ .container > h2*/
+    color: #4c7da5;
+  }
+
+  footer { /*Display footer as flexbox*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-div { /*Set position of #footer-div*/
+    text-align: center;
+  }
+
+  .fields, .content { /*Set position of .fields and .content*/
+    align-self: center;
+  }
+
+  .course { /*Display .course as grid*/
+    grid-template-areas:
+      'course-title'
+      'image'
+      'price'
+      'course-description-title'
+      'course-description' 
+      'content-title'
+      'content'
+      'link'
+  }
+
+  .field-name { /*Set margin of .field-name*/
+  margin: 0px 20px;
+  }
+
+  #about-us article { /*Display #about-us article as grid*/
+    grid-template-areas:
+      'avatar'
+      'bio';
+  }
+
+  #about-us article img { /*Set position of #about-us article image*/
+    justify-self: center;
+  }
+
+  #about-us article p { /*Set position of #about-us article p*/
+    text-align: center;
+  }
+
+  #contact-main-div { /*Display #contact-main-div as grid*/
+    grid-template-areas:
+      'image-tel'
+      'contact-text'
+      'form'
+      'iframe';
+  }
+
+  iframe { /*Set max-width and margin of iframe*/
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  textarea { /*Set height of textarea*/
+    height: 20vh;
+  }
+
+}
+
+@media screen and (min-width: 600px) { /*Set media query for tablets*/
+
+  main { /*Display main as grid*/
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  main img { /*Set max-width of main images*/
+    max-width: 100%;
+  }
+
+  main nav { /*Set position of main nav*/
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #index-main > img:nth-last-of-type(3) { /*Set position of last #index-main > image */
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+
+  #main-page-article-1, #main-page-article-2 { /*Display #main-page-article-1 and #main-page-article-2 as flexbox*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-page-article-3 { /*Set position of #main-page-article-3*/
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+  }
+
+  #index-main > .container:nth-of-type(2) { /*Set position of last #index-main > .container*/
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+  }
+
+  #main-page-article-3 ~ .container > h2 { /*Set color of #main-page-article-3 ~ .container > h2*/
+    color: #4c7da5;
+  }
+
+  #subjects-main { /*Display #subjects-main as flexbox*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subject { /*Display .subject as grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .subject img { /*Set position of .subject image*/
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .subject h2 { /*Set position of .subject h2*/
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+  }
+
+  .fields { /*Set position of .fields*/
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .course { /*Display .course as grid*/
+    display: grid;
+    grid-template-areas:
+      'image course-title'
+      'link price'
+      'course-description-title content-title'
+      'course-description content';
+  }
+
+  .courses-main { /*Display .courses-main as flexbox*/
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .course h4 { /*Set position of .course h4*/
+    align-self: center;
+  }
+
+  .field-name { /*Set margin of .field-name*/
+    margin: 0px 20px;
+  }
+
+  #about-us h2:first-of-type { /*Set position of first #about-us h2*/
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #about-us h2:last-of-type { /*Set position of last #about-us h2*/
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+
+  #about-us-div { /*Set position of #about-us-divdiv*/
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  #about-us-div article:first-of-type { /*Set padding of first #about-us-div article*/
+    padding-bottom: 50px;
+  }
+
+  #contact-main-div { /*Display #contact-main-div as grid*/
+    grid-area: contact-main-div;
+    grid-template-areas:
+      'image-tel contact-text'
+      'iframe form';
+  }
+
+  #contact-main { /*Display #contact-main as grid*/
+    grid-template-areas:
+      'nav nav'
+      'contact-main-div contact-main-div'
+  }
+
+  iframe { /*Set width and margin of iframe*/
+    width: 100%;
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) { /*Set media query for desktops*/
+
+  main { /*Display main as grid*/
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main img { /*Set max-width of main image*/
+    max-width: 100%;
+  }
+
+  main nav { /*Set position of main nav*/
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  #index-main > img:nth-of-type(2) { /*Set position of second #index-main > image*/
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+
+  #index-main > img:first-of-type { /*Set position of first #index-main > image*/
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  #index-main > img:nth-of-type(3) { /*Set position of third #index-main > image*/
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #main-page-article-1 { /*Set position of #main-page-article-1*/
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #index-main > .container:first-of-type { /*Set position of first #index-main > .container*/
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  #main-page-article-1, #main-page-article-2 { /*Display #main-page-article-1 and #main-page-article-2 as flexbox*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-page-article-3 { /*Set position of #main-page-article-3*/
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
+
+  #index-main > .container:nth-of-type(2) { /*Set position of second #index-main > .container*/
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+  }
+
+  #main-page-article-3 ~ .container > h2 { /*Set position of #main-page-article-3 ~ .container > h2*/
+    color: #4c7da5;
+    align-self: center;
+  }
+
+  #main-page-article-3 ~ .container > img { /*Set position of #main-page-article-3 ~ .container > image*/
+    width: 100%;
+  }
+
+  #footer-div p { /*Set grid-template-areas alias of #footer-div p*/
+    grid-area: p;
+  }
+
+  #footer-div address { /*Set position of #footer-div address*/
+    grid-area: address;
+    text-align: center;
+  }
+
+  #footer-div h3 { /*Set position of #footer-div h3*/
+    grid-area: h3;
+  }
+
+  #footer-div h4 { /*Set position of #footer-div h4*/
+    grid-area: h4;
+    text-align: center;
+  }
+
+  #footer-div nav { /*Set position of #footer-div nav*/
+    grid-area: nav;
+    justify-self: center;
+  }
+
+  #footer-div { /*Display #footeer-div as grid*/
+    display: grid;
+    grid-template-areas:
+    'p h4'
+    'address nav'
+    'h3 nav';
+  }
+
+  #subjects-main { /*Display #subjects-main as flexbox*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subject { /*Display .subject as grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .subject img { /*Set position of .subject img*/
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: center;
+  }
+
+  .subject h2 { /*Set font properties and position of .subject h2*/
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .fields { /*Set position of .fields*/
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .content { /*Set position of .content*/
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .content, .fields { /*Set padding and position of .content and .fields*/
+    text-align: center;
+    padding-top: 15vh;
+  }
+
+  .subject p { /*Set position of .subject p*/
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .subject ul { /*Set position of .subject ul*/
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .course { /*Display .course as grid*/
+    display: grid;
+    grid-template-areas:
+      'image image course-title'
+      'course-description-title content-title price'
+      'course-description content link';
+  }
+
+  .courses-main { /*Display .courses-main as flexbox*/
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .course img { /*Set dimensions and position of .course image*/
+    justify-self: left;
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .course h4 { /*Set padding of .course h4*/
+    padding-right: 120px;
+  }
+
+  .course p:last-of-type { /*Set position of last .course p*/
+    text-align: center;
+  }
+
+  .field-name { /*Set margin of .field-name*/
+    margin: 0px 20px;
+  }
+
+  #about-us h2:first-of-type { /*Set position of first #about-us h2*/
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+
+  #about-us h2:last-of-type { /*Set position of last #about-us h2*/
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #about-us-div { /*Set position of #about-us div, display #about-us div as flexbox*/
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  #about-us-div article:first-of-type { /*Set padding of first #about-us-div article*/
+    padding-bottom: 50px;
+  }
+
+  #contact-main-div { /*#Display contact-main-div as grid*/
+    grid-area: contact-main-div;
+    grid-template-areas:
+      'image-tel contact-text iframe'
+      'form form form';
+  }
+
+  #contact-main { /*#Display contact-main as grid*/
+    grid-template-areas:
+      'nav nav nav'
+      'contact-main-div contact-main-div contact-main-div'
+  }
+
+  iframe { /*Set padding of iframe*/
+    padding-left: 40px;
+  }
+
+  #contact-main img { /*Set padding and position of #contact-main image*/
+    align-self: center;
+    padding-top: 90px;
+  }
+
+}
+
