@@ -1,0 +1,399 @@
+/*Website's general color: rgb(26, 106, 154)*/
+
+
+html, body { /*Set maximum width of html, body*/
+  max-width: 100%;
+}
+
+body { /*Set font family of html, body*/
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+}
+
+header { /*Unset the value of display*/
+  display: unset;
+}
+
+header a img { /*Display logo as a block element inside header*/
+  display: block;
+  margin: 0 auto;
+}
+
+header h2 { /*Set font properties, margin and position of motto inside header*/
+  color:rgb(26, 106, 154);;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+header nav { /*Set margin, padding, border, position of nav inside header*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background-color: rgb(26, 106, 154);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+header nav a { /*Set padding, font properties, color and position of nav a inside header, display nav a as a block element*/
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  left: 14em;
+  font-size: 18px;
+}
+
+header nav a:hover { /*Set background color of nav a inside header on hover*/
+  background-color: rgba(63, 62, 62, 0.644);
+}
+
+footer { /*Set background color, padding, font properties and position of nav a inside footer*/
+  background-color: rgba(178, 220, 223, 0.863);
+  font-size: 18px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer img { /*Set position of footer logo*/
+  float: left;
+  position: relative;
+  left: 6em;
+}
+
+footer address { /*Set position of footer address*/
+  position: relative;
+  right: 4.5em;
+}
+
+footer h3 { /*Set margin, padding and font properties of footer h3*/
+  margin: 0;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+footer h4 { /*Set margin, padding and font properties of footer h4*/
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+main div img { /*Set width of two main page images*/
+  width: 100%;
+}
+
+.container { /*Set padding and position of two main page divs*/
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.container h2 { /*Set font properties and position of main page article h2s*/
+  font-size: 46px;
+}
+
+.main-page-article h2 { /*Set font properties and position of main page article h2s*/
+  font-size: 32px;
+  position: relative;
+  left: 6em;
+}
+
+.main-page-article { /*Set padding-bottom of main page articles*/
+  padding-bottom: 100px;
+}
+
+.main-page-article p { /*Set font properties and padding left of main page article ps*/
+  font-size: 20px;
+  padding-left:185px;
+}
+
+.container p { /*Set font properties of main page article ps*/
+  font-size: 24px;
+}
+
+.text-block { /*Set padding, color and position of main page div text-block*/
+  position: absolute;
+  top: 200px;
+  left: 750px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main section img { /*Set float property, margin and dimensions of main section images*/
+  float: left;
+  margin: 0 1em;
+  width: 400px;
+  height: 200px;
+}
+
+main .subject { /*Set padding-bottom of subject page sections*/
+  padding-bottom: 20px;
+}
+
+main .subject h2 { /*Set color, font properties and position of subject page section h2s*/
+  font-size: 40px;
+  text-align: center;
+  color: rgb(26, 106, 154);
+}
+
+main .subject .content { /*Set position of subject page section h3s (word: "Content")*/
+  text-align: left;
+}
+
+main .subject .fields{ /*Set clear property and position of subject page section h3s (word: "Fields")*/
+  clear: both;
+  position: relative;
+  right: 6em;
+}
+
+main section ul { /*Set position of main section unordered lists*/
+  position: relative;
+  left: 25em;
+}
+
+main h3 { /*Set font properties and position of main h3s*/
+  font-size: 32px;
+  text-align: center;
+}
+
+main section h4 { /*Set font properties and position of main section h4s*/
+  font-size: 20px;
+}
+
+.price { /*Set font properties, padding and position of course pages' courses' h5s (price)*/
+  text-align: right;
+  font-style: italic;
+  font-size: 16px;
+  padding-right: 50px;
+}
+
+main section { /*Set background color of main sections*/
+  background-color: whitesmoke;
+}
+
+.field-name { /*Set font properties, background color and position of course pages' field title*/
+  background-color: rgb(211, 233, 241);
+  text-align: center;
+  font-size: 40px;
+}
+
+.fa { /*Set font properties, padding and position of social media buttons*/
+  padding: 10px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover { /*Set opacity of social media buttons on hover*/
+  opacity: 0.7;
+}
+
+.fa-facebook { /*Set color and background of Facebook social media button*/
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram { /*Set color and background of Instagram social media button*/
+  background: #125688;
+  color: white;
+}
+
+.main-page-article img { /*Set dimensions, position of main page articles' images*/
+  width:  280px;
+  height: 180px;
+  object-fit: cover;
+  position: relative;
+  left: 10em;
+  margin-right: 40px;
+}
+
+.main-page-article .main-page-div ~ img { /*Set dimensions, margin and position of main page articles' main page div image, display main page articles' main page div as a block element*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 50%;
+  margin-left: 120px;
+}
+
+.main-page-article ~ .container > h2 { /*Set padding, font properties and position of main page text that overlaps images*/
+  font-size: 58px;
+  position: absolute;
+  top: 360px;
+  left: 330px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: sans; color: white;
+}
+
+.course { /*Set top padding of every course*/
+  padding-top: 2px;
+}
+
+.course h4 { /*Set left padding of every course's h4*/
+  padding-left: 50px;
+}
+
+.course h5 { /*Set left padding and font of every course's h5*/
+  padding-left: 50px;
+  font-size: 17px;
+}
+
+.course h5:last-of-type { /*Set left padding of every course's last h5*/
+  padding-left: 475px;
+}
+
+.course p { /*Set position and font properties of every course's p*/
+  position: relative;
+  left: 0;
+  font-size: 16px;
+}
+
+.subject ul, .course ul { /*Set list type of every unordered list*/
+  list-style-type: circle;
+}
+
+main a:visited { /*Set color of every visited main a (hyperlink)*/
+  color: purple;
+}
+
+main a:hover { /*Set transition effect and font properties of every main a (hyperlink)*/
+  transition: transform .2s;
+  font-weight: 900;
+}
+
+main a:link { /*Set color of every unvisited main a (hyperlink)*/
+  color: rgb(26, 106, 154);
+}
+
+main a:active { /*Set color of every main a (hyperlink) while clicked*/
+  color: red;
+}
+
+.about-us ~ footer { /*Set clear property of about us page footer*/
+  clear: both;
+}
+
+.team-member { /*Set padding of about us page team member article*/
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+}
+
+.team-member > img { /*Set float property of about us page team member avatar*/
+  float: left;
+}
+
+.about-us > article > p { /*Set clear property of about us page article p*/
+  clear: both;
+}
+
+.team-member p { /*Set padding properties of about us page p*/
+  padding-top: 50px;
+  padding-left: 250px;
+}
+
+.about-us { /*Set background color of about us page*/
+  background-color: rgb(212, 231, 231);
+}
+
+.about-us h2 { /*Set font properties, position and padding of about us page h2*/
+  font-size: 64px;
+  position: relative;
+  left: 100px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-family: sans; color: white;
+}
+
+.about-us h2:last-of-type { /*Set font properties and position of about us page last h2*/
+  font-size: 44px;
+  position: relative;
+  left: 550px;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-family: sans; color: white;
+}
+
+iframe { /*Set width, margin and padding properties property of about us page article p, display iframe as a block element*/
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+#contact-main { /*Set padding top property of contact form*/
+  padding-top: 50px;
+}
+
+#contact-main img { /*Set padding properties, dimensions and float property of contact form image*/
+  width: 520px;
+  height: 320px;
+  float: left;
+  padding-left: 100px;
+  padding-right: 50px;
+}
+
+#contact-text { /*Set padding properties of contact form description*/
+  padding-right: 200px;
+  padding-top: 60px;
+}
+
+#contact-text h2 { /*Set font size of contact form description h2*/
+  font-size: 36px;
+}
+
+#contact-text p { /*Set font size of contact form description p*/
+  font-size: 24px;
+}
+
+#contact-main div:last-of-type { /*Set clear, border, padding margin property and background color of contact form description's last div*/
+  margin-top: 120px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  clear: both;
+}
+
+input[type=text], input[type=email], textarea[type=text] { /*Set margin, padding, dimensions and border properties of contact form attribute selectors, display attribute selectors as inline block elements*/
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] { /*Set margin, padding and border properties, width and background color of contact form "submit" attribute selector*/
+  width: 100%;
+  background-color: rgb(26, 106, 154);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover { /*Set background color of contact form "submit" attribute selector on hover*/
+  background-color: rgb(16, 65, 97);
+}
+
+textarea { /*Set dimensions of all textarea elements*/
+  width: 300px;
+  height: 150px;
+}
